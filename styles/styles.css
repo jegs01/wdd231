@@ -1,0 +1,272 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #124a5e;
+    color: white;
+}
+
+.profile {
+    display: flex;
+   justify-content: center;
+   padding: 10px;
+}
+
+.profile img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    background-color: black;
+    padding: 10px 20px;
+    justify-content: space-between;
+    margin-bottom: 0;   
+}
+
+nav ul li {
+    padding: 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover {
+    color: orange;
+}
+
+.hamburger {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.courses {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
+    grid-gap: 10px; 
+    padding: 20px;
+}
+
+.course-work {
+    border: 1px solid #000; 
+    border-radius: 10px 10px 0 0; 
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+.location {
+    border: 1px solid #000; 
+    border-radius: 10px 10px 0 0; 
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 2fr 1fr; 
+    grid-column-gap: 20px; 
+    padding: 20px;
+}
+
+main div section h2 {
+    background-color: #0e3a4f;
+    text-align: center;
+    margin-top: 0;
+    color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 10px;
+}
+
+main section h2 {
+    background-color: #0e3a4f;
+    text-align: center;
+    margin-top: 0;
+    color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 10px;
+}
+
+main div section ul li {
+    padding-left: 20px;
+}
+
+.main-content {
+    padding: 20px;
+    text-align: center;
+    font-size: 10px;
+}
+
+.courses button {
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;
+    padding: 5px;
+    border: none;
+    border-radius: 4px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.certificate {
+    border: 1px solid #000; 
+    border-radius: 10px 10px 0 0;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+section {
+    background-color: #f2f2f2;
+    border-radius: 8px;
+    margin: 10px;
+    flex: 1;
+    min-width: 250px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.course-work ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.location img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.filter-buttons {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.filter-buttons button {
+    margin-right: 10px;
+    padding: 10px;
+    border: none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.filter-buttons button:hover {
+    opacity: 0.8;
+}
+
+.wdd {
+    background-color: #6b4226;
+    color: white;
+}
+
+.courses button:hover {
+    opacity: 0.8;
+}
+
+.courses .completed {
+    background-color: #4caf50; 
+    color: white;
+}
+
+footer {
+    background-color: #124a5e;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer img {
+    width: 2%;
+    height: auto;
+    padding-left: 5px;
+}
+
+@media (max-width: 768px) {
+    .main {
+        grid-template-columns: 1fr; 
+        grid-column-gap: 0; 
+        padding: 10px; 
+    }
+    
+    nav ul {
+        display: none;
+        position: relative;
+        width: auto;
+        background-color: #124a5e;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .courses button {
+        display: block;
+        width: 100%;
+        margin-bottom: 5px;
+        padding: 5px;
+        border: none;
+        border-radius: 4px;
+        font-size: 12px;
+        cursor: pointer;
+    }
+
+    header {
+        display: flex;
+    }
+    
+    .profile {
+        align-items: center;
+    }
+
+    .show {
+        display: block !important;
+    }
+
+    header h1 {
+        font-size: 18px;
+    }
+
+    footer img {
+        width: 8%;
+        height: 10%;
+        padding-left: 5px;
+    }
+
+    footer p {
+        padding: 20px;
+    }
+}
+
