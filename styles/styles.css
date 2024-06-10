@@ -112,7 +112,6 @@ main div section ul li {
 .main-content {
     padding: 20px;
     text-align: center;
-    font-size: 10px;
 }
 
 .courses button {
@@ -187,7 +186,7 @@ section {
 }
 
 .courses .completed {
-    background-color: #4caf50; 
+    background-color: #203354; 
     color: white;
 }
 
