@@ -8,13 +8,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const hamburger = document.querySelector('.hamburger');
     const navLinks = document.querySelector('nav ul');
 
-    // Display the current year
     yearSpan.textContent = new Date().getFullYear();
 
-    // Display the last modified date
     lastModifiedSpan.textContent = document.lastModified;
 
-    // Fetch and display the member data
     async function fetchMembers() {
         try {
             const response = await fetch('https://jegs01.github.io/wdd231/chamber/data/members.json');

@@ -87,7 +87,7 @@ nav ul li a:hover {
 }
 
 #directory.grid .card .image-container {
-    width: 100%;
+    width: 50%;
     padding: 10px;
     box-sizing: border-box;
 }
@@ -123,7 +123,6 @@ nav ul li a:hover {
     flex-grow: 1;
     display: flex;
     justify-content: space-between;
-    align-items: right;
 }
 
 #directory.list .list-item .content-container h2,
@@ -147,7 +146,6 @@ footer {
     text-align: center;
     padding: 1em 0;
     width: 100%;
-    bottom: 0;
 }
 
 @media (max-width: 768px) {
