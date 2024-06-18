@@ -8,18 +8,21 @@ document.addEventListener('DOMContentLoaded', () => {
     const hamburger = document.querySelector('.hamburger');
     const navLinks = document.querySelector('nav ul');
 
+    // Display the current year
     yearSpan.textContent = new Date().getFullYear();
 
+    // Display the last modified date
     lastModifiedSpan.textContent = document.lastModified;
 
+    // Fetch and display the member data
     async function fetchMembers() {
         try {
-            const response = await fetch('data/members.json');
+            const response = await fetch('https://jegs01.github.io/wdd231/chamber/data/members.json');
             if (!response.ok) {
                 throw new Error('Network response was not ok ' + response.statusText);
             }
             const members = await response.json();
-            displayMembers(members, 'grid');
+            return members;
         } catch (error) {
             console.error('Error fetching members:', error);
         }
@@ -38,11 +41,15 @@ document.addEventListener('DOMContentLoaded', () => {
             const card = document.createElement('div');
             card.className = view === 'grid' ? 'card' : 'list-item';
             card.innerHTML = `
-                <img src="images/${member.image}" alt="${member.name} Logo">
-                <h2>${member.name}</h2>
-                <p>${member.address}</p>
-                <p>${member.phone}</p>
-                <a href="${member.website}" target="_blank">${member.website}</a>
+                <div class="image-container">
+                    <img src="https://jegs01.github.io/wdd231/chamber/images/${member.image}" alt="${member.name} Logo">
+                </div>
+                <div class="content-container">
+                    <h2>${member.name}</h2>
+                    <p>${member.address}</p>
+                    <p>${member.phone}</p>
+                    <a href="${member.website}" target="_blank">${member.website}</a>
+                </div>
             `;
             directory.appendChild(card);
         });
