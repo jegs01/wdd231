@@ -1,50 +1,66 @@
 [
     {
         "name": "Idaho Websites",
-        "address": "2115 S Vista Avenue Boise ID 83705",
-        "phone": "(208) 342-9386",
+        "address": "123 Lagos Avenue, Lagos, Nigeria",
+        "phone": "+234 802 342 9386",
         "website": "https://idahowebsites.com/",
-        "image": "pic.jpg",
+        "image": "idaho.svg",
         "membershipLevel": 1
     },
     {
         "name": "Surge Web Design",
-        "address": "4072 E Arch Drive Meridian ID 83646",
-        "phone": "(208) 631-0640",
+        "address": "456 Victoria Island, Lagos, Nigeria",
+        "phone": "+234 803 631 0640",
         "website": "https://www.surgewebdesign.com/",
-        "image": "pic.jpg",
+        "image": "flash.webp",
         "membershipLevel": 2
     },
     {
         "name": "Graphic Zen",
-        "address": "1788 E Summerplace Court Meridian ID 83646",
-        "phone": "(208) 631-4984",
+        "address": "789 Ikeja Street, Lagos, Nigeria",
+        "phone": "+234 804 631 4984",
         "website": "https://graphiczen.com/",
-        "image": "pic.jpg",
+        "image": "graphic.svg",
         "membershipLevel": 3
     },
     {
         "name": "Peppershock Media",
-        "address": "1215 3rd Street Nampa ID 83651",
-        "phone": "(208) 461-5070",
+        "address": "101 Marina Road, Lagos, Nigeria",
+        "phone": "+234 805 461 5070",
         "website": "https://www.peppershock.com/",
-        "image": "pic.jpg",
+        "image": "pepper.svg",
         "membershipLevel": 1
     },
     {
         "name": "Flash Tech Services",
-        "address": "Star Idaho 83669",
-        "phone": "(208) 488-5810",
-        "website": "https://flaschtechnicalservices.com/",
-        "image": "pic.jpg",
+        "address": "102 Ikoyi Crescent, Lagos, Nigeria",
+        "phone": "+234 806 488 5810",
+        "website": "https://flashtechnicalservices.com/",
+        "image": "flash.webp",
         "membershipLevel": 2
     },
     {
         "name": "Metro Express Car Wash",
-        "address": "1725 E Overland Road Meridian ID 83642",
-        "phone": "(208) 888-4073",
+        "address": "103 Victoria Island, Lagos, Nigeria",
+        "phone": "+234 807 888 4073",
         "website": "https://www.metroexpresscarwash.com/",
-        "image": "pic.jpg",
+        "image": "metro.webp",
         "membershipLevel": 3
+    },
+    {
+        "name": "Lagos Digital Solutions",
+        "address": "23 Marina Road, Lagos, Nigeria",
+        "phone": "+234 802 345 6789",
+        "website": "https://lagosdigitalsolutions.com/",
+        "image": "conv.svg",
+        "membershipLevel": 1
+    },
+    {
+        "name": "Abuja Creative Studios",
+        "address": "12 Ahmadu Bello Way, Lagos, Nigeria",
+        "phone": "+234 803 456 7890",
+        "website": "https://abujacreativestudios.com/",
+        "image": "seo.webp",
+        "membershipLevel": 2
     }
 ]

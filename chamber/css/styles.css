@@ -1,30 +1,64 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: "PT Serif", serif;
+    font-weight: 400;
+    font-style: normal;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
 }
 
 header {
-    background: #333;
-    color: #fff;
-    padding: 1em 0;
-    text-align: center;
+    background-color: #124a5e;
+    color: white;
+}
+
+nav {
+    align-items: center;
+    display: flex;
+}
+
+nav .logo {
+    margin-right: auto; 
+    width: 70px;
+    height: auto;
+    padding-left: 25px;
 }
 
 nav ul {
     list-style: none;
-    padding: 0;
+    display: flex;
+    padding: 10px 20px;
+    justify-content: space-between;
+    margin-bottom: 0;   
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 1em;
+    padding: 10px;
 }
 
 nav ul li a {
-    color: #fff;
+    color: white;
     text-decoration: none;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover {
+    color: #FFDAB9;
+}
+
+.current {
+    color: orange; 
+    font-weight: bold;
+}
+
+.hamburger {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
 }
 
 .view-toggle {
@@ -38,24 +72,143 @@ nav ul li a {
 }
 
 #directory {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1em;
     padding: 1em;
 }
 
-.card, .list-item {
-    background: #fff;
-    padding: 1em;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+#directory.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+#directory.grid .card {
+    flex-direction: column;
+    padding: 10px;
+}
+
+#directory.grid .card .image-container {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#directory.grid .card .image-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+#directory.list .list-item {
+    flex-direction: column;
+    padding: 10px;
+    background-color: #e0f7fa; 
+    margin-bottom: 10px;
+    white-space: nowrap; 
+    flex-grow: 1;
+}
+
+#directory.list .list-item:nth-child(even) {
+    background-color: #b2dfdb; 
+}
+
+#directory.list .list-item .image-container {
+    width: 100px;
+}
+
+#directory.list .list-item .image-container img {
+    display: none; 
+}
+
+#directory.list .list-item .content-container {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: right;
+}
+
+#directory.list .list-item .content-container h2,
+#directory.list .list-item .content-container p,
+#directory.list .list-item .content-container a {
+    margin: 0;
+    padding-right: 10px; 
+}
+
+#wayfinder {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
 }
 
 footer {
-    background: #333;
+    background: #124a5e;
     color: #fff;
     text-align: center;
     padding: 1em 0;
-    position: fixed;
     width: 100%;
     bottom: 0;
+}
+
+@media (max-width: 768px) {
+    main {
+        grid-template-columns: 1fr; 
+        grid-column-gap: 0; 
+        padding: 10px; 
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    nav ul {
+        display: none;
+        position: relative;
+        width: auto;
+        background-color: #124a5e;
+        margin-left: auto;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .hamburger {
+        display: flex;
+        margin-left: auto;
+        line-height: 0;
+        margin-bottom: 10px;
+    }
+
+    .show {
+        display: block !important;
+    }
+
+    #directory.list {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    #directory.list .list-item {
+        margin-bottom: 20px;
+        padding: 10px;
+        border-bottom: 1px solid #ccc; 
+    }
+
+    #directory.list .list-item .content-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #directory.list .list-item .content-container h2,
+    #directory.list .list-item .content-container p,
+    #directory.list .list-item .content-container a {
+        padding-right: 0; 
+        padding-bottom: 10px; 
+    }
+
 }

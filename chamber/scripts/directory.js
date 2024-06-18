@@ -4,14 +4,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const listViewBtn = document.getElementById('list-view');
     const yearSpan = document.getElementById('year');
     const lastModifiedSpan = document.getElementById('last-modified');
+    const wayfinder = document.getElementById('wayfinder');
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('nav ul');
 
-    // Display the current year
     yearSpan.textContent = new Date().getFullYear();
 
-    // Display the last modified date
     lastModifiedSpan.textContent = document.lastModified;
 
-    // Fetch and display the member data
     async function fetchMembers() {
         try {
             const response = await fetch('data/members.json');
@@ -48,14 +48,43 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    function updateWayfinder(view) {
+        wayfinder.textContent = `You are viewing: ${view}`;
+    }
+
     gridViewBtn.addEventListener('click', () => {
         fetchMembers().then(members => displayMembers(members, 'grid'));
+        updateWayfinder('Grid View');
     });
 
     listViewBtn.addEventListener('click', () => {
         fetchMembers().then(members => displayMembers(members, 'list'));
+        updateWayfinder('List View');
     });
 
     // Initial fetch and display
-    fetchMembers();
+    fetchMembers().then(members => displayMembers(members, 'grid'));
+    updateWayfinder('Grid View');
+
+    hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('show');
+    });
+
+    function toggleMenu() {
+        const ul = document.querySelector('nav ul');
+        ul.classList.toggle('open');
+        const hamburger = document.querySelector('.hamburger');
+        hamburger.classList.toggle('active');
+    }
+
+    // Highlight the current page link
+    const currentPath = window.location.pathname.split('/').pop();
+    const navLinkElements = document.querySelectorAll('nav ul li a');
+
+    navLinkElements.forEach(link => {
+        const linkPath = link.getAttribute('href').split('/').pop();
+        if (linkPath === currentPath) {
+            link.classList.add('current');
+        }
+    });
 });
