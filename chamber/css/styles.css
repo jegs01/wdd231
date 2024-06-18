@@ -13,6 +13,10 @@ header {
     color: white;
 }
 
+h1 {
+    text-align: center;
+}
+
 nav {
     align-items: center;
     display: flex;
