@@ -51,7 +51,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: orange;
+    color: #00FF00;
 }
 
 .hamburger {
