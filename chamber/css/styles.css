@@ -231,7 +231,7 @@ footer {
 
 .call-to-action {
     position: relative;
-    padding: 30px;
+    padding: 10px;
     margin: 40px;
     text-align: center;
 }
@@ -241,7 +241,7 @@ footer {
     color: white;
     padding: 10px 20px;
     text-decoration: none;
-    font-size: xx-large;
+    font-size: large;
 }
 
 .call-to-action a:hover {
