@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Business Directory for Chamber Members">
+    <meta name="author" content="Your Full Name">
+    <title>Lagos Chamber of Commerce</title>
+    <meta property="og:title" content="Lagos Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://jegs01.github.io/wdd231/chamber/images/chamberlogo.webp">
+    <meta property="og:url" content="https://jegs01.github.io/wdd231/chamber/directory.html">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="images/chamberlogo.webp" alt="Logo" class="logo" loading="lazy">
+            <button class="hamburger">&#9776;</button>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="#">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h1>Lagos Chamber of Commerce</h1>
+            <picture>
+                <source srcset="images/herochamber_small.webp" media="(max-width: 500px)">
+                <source srcset="images/herochamber.webp" media="(max-width: 1000px)">
+                <img src="images/herochamber.webp" alt="Commerce Image" loading="lazy">
+            </picture>
+        </section>
+
+        <section class="call-to-action">
+            <a href="join.html">Join the Lagos Chamber of Commerce</a>
+        </section>
+
+        <section class="events">
+            <h2>Current Events</h2>
+            <div id="eventsList">
+                <h4>2024 Economic Outlook & Business Analysis Conference</h4><br><p><b>Date:</b> July 16, 2024</p><br>
+                <p><b>Time:</b> 11:00 AM</p><br><p><b>Venue:</b> 1 Idowu Taylor Street, Victoria Island, Lagos​ (Lagos Chamber of Commerce)</p>
+            </div>
+        </section>
+        <section class="weather">
+            <h2>Weather</h2>
+            <div class="today-weather">
+                <h3>Today Current Weather</h3>
+                <p id="town"></p>
+                <p id="description"></p>
+                <img src="" alt="" id="weather-image">
+                <p id="temperature"></p>
+            </div>
+
+            <aside>
+                <h3>3 Days Weather Forecast</h3>
+                <div id="day-one"> Tomorrow
+                    <p id="town-one"></p>
+                    <p id="description-one"></p>
+                    <img src="" alt="" id="weather-image-one">
+                    <p id="temperature-one"></p>
+                </div>
+                <div id="day-two">Next 2 Days
+                    <p id="town-two"></p>
+                    <p id="description-two"></p>
+                    <img src="" alt="" id="weather-image-two">
+                    <p id="temperature-two"></p>
+                </div>
+                <div id="day-three">Next 3 Days
+                    <p id="town-three"></p>
+                    <p id="description-three"></p>
+                    <img src="" alt="" id="weather-image-three">
+                    <p id="temperature-three"></p>
+                </div>
+            </aside>
+        </section>
+        <section class="spotlights">
+            <h2>Company Spotlights</h2>
+            <div id="spotlightCompanies">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Contact us: (208) 123-4567 | info@chamber.com</p>
+        <p>© <span id="year"></span> Kolawole Jegede | WDD 231</p>
+        <p>Last Modified: <span id="last-modified"></span></p>
+    </footer>
+    <script src="scripts/home.js"></script>
+</body>
+</html>

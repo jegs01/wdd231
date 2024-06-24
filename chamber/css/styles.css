@@ -1,3 +1,5 @@
+/* Default Page CSS and Directory Page CSS */
+
 body {
     font-family: "PT Serif", serif;
     font-weight: 400;
@@ -213,4 +215,160 @@ footer {
         padding-bottom: 10px; 
     }
 
+}
+
+
+/*  Additional CSS for Home */
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.call-to-action {
+    position: relative;
+    padding: 30px;
+    margin: 40px;
+    text-align: center;
+}
+
+.call-to-action a {
+    background-color: #124a5e;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: xx-large;
+}
+
+.call-to-action a:hover {
+    background-color: #0056b3;
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.events {
+    margin: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    background-color: #b2dfdb;
+}
+
+section {
+    padding: 20px;
+}
+
+.events, .weather, .spotlights {
+    margin-bottom: 20px;
+}
+
+.spotlights {
+    display: inline-block;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    background-color: #b2dfdb;
+}
+
+.spotlight-company {
+    display: inline-block;
+    width: 25%;
+    text-align: center;
+    align-items: center;
+    margin: 20px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.spotlight-company img {
+    max-width: 50%;
+}
+
+h2 {
+    color: #124a5e;
+}
+
+/* Main weather section */
+.weather {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+/* Today's weather */
+.today-weather {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f1f1f1;
+}
+
+/* Next 3 days forecast */
+aside {
+    width: 100%;
+    margin: 10px;
+    padding-top: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+aside h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#day-one, #day-two, #day-three {
+    display: inline-block;
+    width: 25%;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+#day-one img, #day-two img, #day-three img {
+    width: 100%;
+    height: auto;
+    max-width: 100px;
+}
+
+.weather #description, #description-one, #description-two, #description-three {
+    text-transform: capitalize;
+} 
+
+@media (max-width: 768px) {
+    .spotlights {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .spotlight-company {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    #day-one, #day-two, #day-three {
+        width: 50%;
+        margin-bottom: 20px;
+    }
+
+    .call-to-action a { 
+        font-size: medium;
+    }
 }
