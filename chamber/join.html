@@ -51,24 +51,25 @@
             <label for="organization">Business/Organization Name:
                 <input type="text" id="organization" name="organization" title="Organization Name" autocomplete="organization" required>
             </label>
-            <label for="membership-level">Membership Level:
+            <label for="membership-level" class="membership-level">Membership Level:
                 <select id="membership-level" name="membership-level" title="Membership Level" required>
+                    <option value="">Select Membership Level</option>
                     <option value="NP">NP Membership - No fee</option>
                     <option value="Bronze">Bronze Membership</option>
                     <option value="Silver">Silver Membership</option>
                     <option value="Gold">Gold Membership</option>
                 </select>
-                <button type="button" id="openButton">Learn More</button>
-                <dialog id="dialogBox">
-                    <div id="membership-details"></div>
-                    <button type="button" id="closeButton">Close</button>
-                </dialog>
             </label>
+            <button type="button" id="openButton">Learn More</button>
+            <dialog id="dialogBox">
+                <div id="membership-details"></div>
+                <button type="button" id="closeButton">Close</button>
+            </dialog>
             <label for="description">Business/Organization Description:
                 <textarea id="description" name="description" title="Organization Description"></textarea>
             </label>
             <input type="hidden" id="timestamp" name="timestamp">
-            <input type="submit" value="Join">
+            <input type="submit" value="Submit">
         </form>
     </main>
     <footer>
