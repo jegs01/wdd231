@@ -74,10 +74,6 @@ form label {
     margin: 30px 0;
 }
 
-.membership-level {
-    margin-bottom: 1px;
-}
-
 input[type="text"], input[type="email"], input[type="tel"], select, textarea {
     width: 100%;
     padding: 8px;
@@ -139,13 +135,17 @@ dialog div {
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
+    position: relative;
 }
 
 .close {
     color: #aaa;
-    float: right;
+    position: absolute;
+    top: 10px;
+    right: 10px;
     font-size: 28px;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .close:hover,

@@ -36,19 +36,43 @@
         <section class="membership-cards">
             <div class="card" id="np-card">
                 <h2>NP Membership</h2>
-                <p>Access to events and resources without fee.</p>
+                <button type="button" class="openButton" data-dialog="npDialog">Learn More</button>
+                <dialog id="npDialog">
+                    <div>
+                        <p>NP Membership: Access to events and resources without fee.</p>
+                        <span class="close" data-dialog="npDialog">&times;</span>
+                    </div>
+                </dialog>
             </div>
             <div class="card" id="bronze-card">
                 <h2>Bronze Membership</h2>
-                <p>Includes special events and basic training.</p>
+                <button type="button" class="openButton" data-dialog="bronzeDialog">Learn More</button>
+                <dialog id="bronzeDialog">
+                    <div>
+                        <p>Bronze Membership: Includes special events and basic training.</p>
+                        <span class="close" data-dialog="bronzeDialog">&times;</span>
+                    </div>
+                </dialog>
             </div>
             <div class="card" id="silver-card">
                 <h2>Silver Membership</h2>
-                <p>Includes all Bronze benefits plus advertising.</p>
+                <button type="button" class="openButton" data-dialog="silverDialog">Learn More</button>
+                <dialog id="silverDialog">
+                    <div>
+                        <p>Silver Membership: Includes all Bronze benefits plus advertising.</p>
+                        <span class="close" data-dialog="silverDialog">&times;</span>
+                    </div>
+                </dialog>
             </div>
             <div class="card" id="gold-card">
                 <h2>Gold Membership</h2>
-                <p>Includes all Silver benefits plus event discounts.</p>
+                <button type="button" class="openButton" data-dialog="goldDialog">Learn More</button>
+                <dialog id="goldDialog">
+                    <div>
+                        <p>Gold Membership: Includes all Silver benefits plus event discounts.</p>
+                        <span class="close" data-dialog="goldDialog">&times;</span>
+                    </div>
+                </dialog>
             </div>
         </section>
 
@@ -80,11 +104,6 @@
                     <option value="Gold">Gold Membership</option>
                 </select>
             </label>
-            <button type="button" id="openButton">Learn More</button>
-            <dialog id="dialogBox">
-                <div id="membership-details"></div>
-                <button type="button" id="closeButton">Close</button>
-            </dialog>
             <label for="description">Business/Organization Description:
                 <textarea id="description" name="description" title="Organization Description"></textarea>
             </label>

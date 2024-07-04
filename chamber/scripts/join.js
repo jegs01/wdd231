@@ -12,19 +12,6 @@ function displayFormDetails() {
     document.getElementById('timestamp').textContent = urlParams.get('timestamp');
 }
 
-function showMembershipDetails() {
-    const membershipDetails = {
-        'NP': '<p>NP Membership: Access to events and resources without fee.</p>',
-        'Bronze': '<p>Bronze Membership: Includes special events and basic training.</p>',
-        'Silver': '<p>Silver Membership: Includes all Bronze benefits plus advertising.</p>',
-        'Gold': '<p>Gold Membership: Includes all Silver benefits plus event discounts.</p>'
-    };
-
-    const selectedMembership = document.getElementById('membership-level').value;
-    document.getElementById('membership-details').innerHTML = membershipDetails[selectedMembership];
-    document.getElementById('dialogBox').showModal();
-}
-
 document.addEventListener("DOMContentLoaded", function() {
     document.getElementById('year').textContent = new Date().getFullYear();
     document.getElementById('last-modified').textContent = document.lastModified;
@@ -55,9 +42,17 @@ document.addEventListener("DOMContentLoaded", function() {
         displayFormDetails();
     }
 
-    document.getElementById('openButton').addEventListener('click', showMembershipDetails);
+    document.querySelectorAll('.openButton').forEach(button => {
+        button.addEventListener('click', (e) => {
+            const dialogId = e.target.getAttribute('data-dialog');
+            document.getElementById(dialogId).showModal();
+        });
+    });
 
-    document.getElementById('closeButton').addEventListener('click', () => {
-        document.getElementById('dialogBox').close();
+    document.querySelectorAll('.close').forEach(button => {
+        button.addEventListener('click', (e) => {
+            const dialogId = e.target.getAttribute('data-dialog');
+            document.getElementById(dialogId).close();
+        });
     });
 });
