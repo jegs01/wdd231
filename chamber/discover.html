@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chamber Discover Page">
+    <meta name="author" content="Kolawole Jegede">
+    <title>Chamber Discover Page</title>
+    <meta property="og:title" content="Chamber Discover Page">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://jegs01.github.io/wdd231/chamber/images/chamberlogo.webp">
+    <meta property="og:url" content="https://jegs01.github.io/wdd231/chamber/discover.html">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/join.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="images/chamberlogo.webp" alt="Logo" class="logo" loading="lazy">
+            <button class="hamburger">&#9776;</button>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="grid-container">
+        <aside class="sidebar">
+            <div id="visit-message"></div>
+            <div class="sidebar-content">
+                <h2>Lagos City Information</h2>
+        
+                <section class="demographics">
+                    <h3>Demographics</h3>
+                    <p>Population: 28,000,000</p>
+                    <p>Median Age: 35.5 years</p>
+                    <p>Median Household Income: NGN150,000</p>
+                </section>
+        
+                <section class="events">
+                    <h3>Upcoming Events</h3>
+                    <ul>
+                        <li><strong>July 16, 2024</strong> - 2024 Economic Outlook & Business Analysis Conference</li>
+                        <li><strong>August 10, 2024</strong> - Farmer's Market</li>
+                        <li><strong>September 5, 2024</strong> - Outdoor Concert</li>
+                    </ul>
+                </section>
+        
+                <section class="attractions">
+                    <h3>Local Attractions</h3>
+                    <ul>
+                        <li><a href="https://en.wikipedia.org/wiki/National_Theatre,_Nigeria">National Arts Theatre, Iganmu, Lagos</a></li>
+                        <li><a href="https://en.wikipedia.org/wiki/Tinubu_Square">Tinubu Square</a></li>
+                        <li><a href="https://momaa.org/directory/nigerian-national-museum/#google_vignette">National Museum</a></li>
+                    </ul>
+                </section>
+        
+                <section class="calendar">
+                    <h3>Calendar</h3>
+                    <iframe src="https://calendar.google.com/calendar/embed?src=YOUR_CALENDAR_ID&ctz=YOUR_TIME_ZONE" class="custom-iframe" frameborder="0" scrolling="no"></iframe>
+                </section>
+            </div>
+        </aside>
+        <section class="main-content">
+            <div class="gallery">
+                <div class="gallery-card">
+                    <img data-src="images/lekki_link_bridge.webp" alt="Lekki-Ikoyi Link Bridge" class="lazy">
+                    <div class="caption">Lekki-Ikoyi Link Bridge</div>
+                </div>
+                <div class="gallery-card">
+                    <img data-src="images/national_theater.webp" alt="National Arts Theatre" class="lazy">
+                    <div class="caption">National Arts Theatre</div>
+                </div>
+                <div class="gallery-card">
+                    <img data-src="images/tinubu_square.webp" alt="Tinubu Square" class="lazy">
+                    <div class="caption">Tinubu Square</div>
+                </div>
+                <div class="gallery-card">
+                    <img data-src="images/civic_towers.webp" alt="Civic Tower" class="lazy">
+                    <div class="caption">Civic Tower</div>
+                </div>
+                <div class="gallery-card">
+                    <img data-src="images/victoria_island.webp" alt="Lagos Island skyline from Victoria Island" class="lazy">
+                    <div class="caption">Lagos Island skyline from Victoria Island</div>
+                </div>
+                <div class="gallery-card">
+                    <img data-src="images/lekki-epe_expressway.webp" alt="Lekki–Epe Expressway" class="lazy">
+                    <div class="caption">Lekki–Epe Expressway</div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Contact us: (208) 123-4567 | info@chamber.com</p>
+        <p>© <span id="year"></span> Kolawole Jegede | WDD 231</p>
+        <p>Last Modified: <span id="last-modified"></span></p>
+    </footer>
+    <script src="scripts/join.js"></script>
+</body>
+</html>

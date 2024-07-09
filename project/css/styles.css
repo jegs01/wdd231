@@ -1,0 +1,238 @@
+body {
+    font-family: "PT Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+h1 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #124a5e;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+header {
+    background-color: #124a5e;
+    color: white;
+    width: 100%;
+}
+
+header nav {
+    align-items: center;
+    display: flex;
+}
+
+header nav .logo {
+    margin-right: auto; 
+    width: 70px;
+    height: auto;
+    padding-left: 25px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    padding: 10px 20px;
+    justify-content: space-between;
+    margin-bottom: 0;   
+}
+
+header nav ul li {
+    padding: 10px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+header nav ul li a:hover {
+    color: #FFDAB9;
+}
+
+.current {
+    color: orange; 
+    font-weight: bold;
+}
+
+.hamburger {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+#bird-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+    justify-content: center;
+    text-transform: capitalize;
+}
+
+.bird-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    max-width: 200px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.bird-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.bird-card h2 {
+    margin: 10px 0;
+}
+
+.bird-card p {
+    margin: 5px 0;
+}
+
+dialog {
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    width: 90%;
+    padding: 20px;
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.modal-content .close {
+    align-self: flex-end;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+button.active {
+    background-color: orange;
+}
+
+div button {
+    margin: 2px;
+    font-size: large;
+    text-align: center;
+}
+
+#bird-modal-name {
+    text-transform: capitalize;
+}
+
+.about {
+    width: 60%; 
+    margin: 0 auto; 
+    text-align: center; 
+    padding: 20px; 
+}
+
+.about h2, .request h2, .request h2 {
+    margin-bottom: 20px; 
+    color: #124a5e;
+    text-align: center;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.about p {
+    line-height: 1.6; 
+}
+
+form label {
+    display: block;
+    margin: 30px 0;
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #124a5e;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+footer {
+    background-color: #124a5e;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.sociallinks {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+}
+
+.sociallinks a img {
+    width: 30px;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    header nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    header nav ul {
+        display: none;
+        position: relative;
+        width: auto;
+        background-color: #124a5e;
+        margin-left: auto;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+    .hamburger {
+        display: flex;
+        margin-left: auto;
+        line-height: 0;
+        margin-bottom: 10px;
+    }
+
+    .show {
+        display: block !important;
+    }
+}

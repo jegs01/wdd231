@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bird Species">
+    <meta name="author" content="Kolawole Jegede">
+    <title>Bird Species</title>
+    <meta property="og:title" content="Bird Species">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://en.wikipedia.org/wiki/File:AmericanKestrel02.jpg">
+    <meta property="og:url" content="https://jegs01.github.io/wdd231/project">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="images/logo.webp" alt="Logo" class="logo" loading="lazy">
+            <button class="hamburger">&#9776;</button>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="request.html">Request Species</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Bird Species</h1>
+        <div id="button-container">
+            <button id="accipitridae-btn" class="species-btn">Accipitridae</button>
+            <button id="anatidae-btn" class="species-btn">Anatidae</button>
+            <button id="bucorvidae-btn" class="species-btn">Bucorvidae</button>
+            <button id="corvidae-btn" class="species-btn">Corvidae</button>
+            <button id="columbidae-btn" class="species-btn">Columbidae</button>
+            <button id="falconidae-btn" class="species-btn">Falconidae</button>
+            <button id="fringillidae-btn" class="species-btn">Fringillidae</button>
+            <button id="paridae-btn" class="species-btn">Paridae</button>
+            <button id="psittacidae-btn" class="species-btn">Psittacidae</button>
+            <button id="strigidae-btn" class="species-btn">Strigidae</button>
+            <button id="trochilidae-btn" class="species-btn">Trochilidae</button>
+        </div>
+        <div id="bird-container"></div>
+        <dialog id="bird-modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2 id="bird-modal-name"></h2>
+                <img id="bird-modal-image" alt="">
+                <p id="bird-modal-binomial-name"></p>
+                <p id="bird-modal-conservation-status"></p>
+                <p id="bird-modal-classification"></p>
+                <a id="bird-modal-link" href="" target="_blank">Learn more</a>
+            </div>
+        </dialog>
+    </main>
+    <footer class="footer">
+        <div class="year-highlight">&copy; <span id="year"></span> 🌴 All Rights Reseved 🌴 birdspecies.com</div>
+        <div>Last modified: <span id="last-modified"></span></div>
+        <nav class="sociallinks">
+            <a href="https://facebook.com" target="_blank">
+                <img src="images/facebok.jpeg" alt="Facebook">
+            </a>
+            <a href="https://youtube.com" target="_blank">
+                <img src="images/youtube.png" alt="Twitter">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="images/xlogo.png" alt="Instagram">
+            </a>
+        </nav>
+
+    </footer>
+    <script src="script/script.js" defer></script>
+</body>
+</html>

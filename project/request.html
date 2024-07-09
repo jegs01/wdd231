@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Request Bird Species">
+    <meta name="author" content="Kolawole Jegede">
+    <title>Request Bird Species</title>
+    <meta property="og:title" content="Request Bird Species">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://en.wikipedia.org/wiki/File:AmericanKestrel02.jpg">
+    <meta property="og:url" content="https://jegs01.github.io/wdd231/project/request.html">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body onload="setTimestamp()">
+    <header>
+        <nav>
+            <img src="images/logo.webp" alt="Logo" class="logo" loading="lazy">
+            <button class="hamburger">&#9776;</button>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="request.html">Request Species</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="request">
+        <h2>Request Bird Species</h2>
+        <form method="get" action="thankyou.html">
+            <label for="first-name">First Name:
+                <input type="text" id="first-name" name="first-name" title="First Name" autocomplete="given-name" required>
+            </label>
+            <label for="last-name">Last Name:
+                <input type="text" id="last-name" name="last-name" title="Last Name" autocomplete="family-name" required>
+            </label>
+            <label for="email">Email:
+                <input type="email" id="email" name="email" title="Email" autocomplete="email" placeholder="example@domain.com" required>
+            </label>
+            <label for="bird-species-name">Bird Species Name:
+                <input type="text" id="bird-species-name" name="bird-species-name" title="Bird Species Name" autocomplete="off" required>
+            </label>
+            <label for="description">Bird Species Description:
+                <textarea id="description" name="description" title="Bird Species Description"></textarea>
+            </label>
+            <input type="hidden" id="timestamp" name="timestamp">
+            <input type="submit" value="Request Species">
+        </form>
+    </main>
+    <footer class="footer">
+        <div class="year-highlight">&copy; <span id="year"></span> 🌴 All Rights Reseved 🌴 birdspecies.com</div>
+        <div>Last modified: <span id="last-modified"></span></div>
+        <nav class="sociallinks">
+            <a href="https://facebook.com" target="_blank">
+                <img src="images/facebok.jpeg" alt="Facebook">
+            </a>
+            <a href="https://youtube.com" target="_blank">
+                <img src="images/youtube.png" alt="Twitter">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="images/xlogo.png" alt="Instagram">
+            </a>
+        </nav>
+
+    </footer>
+    <script src="script/script.js" defer></script>
+</body>
+</html>
