@@ -337,5 +337,16 @@ footer {
 
     .gallery img:hover {
         transform: none;
+        box-shadow: none;
+    }
+
+    .gallery-card {
+        transition: none;
+        box-shadow: none;
+    }
+    
+    .gallery-card:hover {
+        transform: none;
+        box-shadow: none;
     }
 }
