@@ -283,12 +283,17 @@ footer {
     border: 0;
     width: 100%;
     height: 300px;
+    overflow: hidden;
 }
 
 .main-content {
     background: #fff;
     padding: 1rem;
     border-radius: 8px;
+}
+
+.main-content h2 {
+    text-align: center;
 }
 
 .gallery {
