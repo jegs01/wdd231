@@ -195,6 +195,14 @@ footer {
     width: 100%;
 }
 
+footer p a {
+    color: #fff;
+}
+
+footer p a:hover {
+    color: orange;
+}
+
 .sociallinks {
     display: flex;
     gap: 10px;
