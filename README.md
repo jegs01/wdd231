@@ -14,7 +14,7 @@ This collection of projects showcases enhanced web development skills and concep
 
 Explore each project from WDD231:
 
-- **Main Project Portfolio:** [https://jegs01.github.io/wdd231/](https://jegs01.github.io/wdd231/)
+- **Main Project Portfolio:** [https://jegs01.github.io/wdd231/chamber/](https://jegs01.github.io/wdd231/chamber/)
 - **Prophets Project:** [https://jegs01.github.io/wdd231/prophets.html](https://jegs01.github.io/wdd231/prophets.html)
 - **Final Project:** [https://jegs01.github.io/wdd231/project/](https://jegs01.github.io/wdd231/project/)
 
