@@ -18,6 +18,7 @@ Explore each project from WDD231:
 - **Prophets Project:** [https://jegs01.github.io/wdd231/prophets.html](https://jegs01.github.io/wdd231/prophets.html)
 - **Final Project:** [https://jegs01.github.io/wdd231/project/](https://jegs01.github.io/wdd231/project/)
 
+- **Ecommerce Project:** [https://thriving-parfait-32c018.netlify.app/](https://thriving-parfait-32c018.netlify.app/)
 Each project demonstrates the application of various advanced web development techniques covered in the WDD231 class.
 
 ## About the Developer
