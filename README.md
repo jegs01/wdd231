@@ -12,7 +12,7 @@ This collection of projects showcases enhanced web development skills and concep
 
 ## Live Project Links
 
-Explore each project from WDD231:
+Explore each project from WDD231 and WDD330:
 
 - **Main Project Portfolio:** [https://jegs01.github.io/wdd231/chamber/](https://jegs01.github.io/wdd231/chamber/)
 - **Prophets Project:** [https://jegs01.github.io/wdd231/prophets.html](https://jegs01.github.io/wdd231/prophets.html)
@@ -20,8 +20,9 @@ Explore each project from WDD231:
 
 - **Ecommerce Project:** [https://thriving-parfait-32c018.netlify.app/](https://thriving-parfait-32c018.netlify.app/)
 
+ **Weather Project:** [https://weatherdata330.netlify.app/](https://weatherdata330.netlify.app/)
 
-Each project demonstrates the application of various advanced web development techniques covered in the WDD231 class.
+Each project demonstrates the application of various advanced web development techniques covered in the WDD231 and WDD330 class.
 
 ## About the Developer
 
