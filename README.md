@@ -19,7 +19,7 @@ Explore each project from WDD231 and WDD330:
 - **Final Project:** [https://jegs01.github.io/wdd231/project/](https://jegs01.github.io/wdd231/project/)
 
 - **Ecommerce Projects:** [https://thriving-parfait-32c018.netlify.app/](https://thriving-parfait-32c018.netlify.app/)
-                          [https://wdd-430-group13.vercel.app/](https://wdd-430-group13.vercel.app/)
+                         - **:** [https://wdd-430-group13.vercel.app/](https://wdd-430-group13.vercel.app/)
 - **Weather Project:** [https://weatherdata330.netlify.app/](https://weatherdata330.netlify.app/)
 
 Each project demonstrates the application of various advanced web development techniques covered in the WDD231 and WDD330 class.
